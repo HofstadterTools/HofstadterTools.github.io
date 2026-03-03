@@ -252,16 +252,16 @@
 <span></span><span class="sd">&quot;&quot;&quot;The Hofstadter model classes.&quot;&quot;&quot;</span>
 
 <span class="c1"># --- external imports</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib.ticker</span> <span class="k">as</span> <span class="nn">ticker</span>
-<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Polygon</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">gcd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.ticker</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ticker</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Polygon</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">gcd</span>
 <span class="c1"># --- internal imports</span>
-<span class="kn">from</span> <span class="nn">HT.functions</span> <span class="kn">import</span> <span class="n">models</span> <span class="k">as</span> <span class="n">fm</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">HT.functions</span><span class="w"> </span><span class="kn">import</span> <span class="n">models</span> <span class="k">as</span> <span class="n">fm</span>
 
 
-<div class="viewcode-block" id="Hofstadter"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter">[docs]</a><span class="k">class</span> <span class="nc">Hofstadter</span><span class="p">:</span>
+<div class="viewcode-block" id="Hofstadter"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">Hofstadter</span><span class="p">:</span>
 <span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;The Hofstadter model class.</span>
 
 <span class="sd">    The Hamiltonian for the Hofstadter model is given as</span>
@@ -272,7 +272,7 @@
 <span class="sd">    where :math:`\braket{\dots}_\kappa` denotes :math:`\kappa`-th nearest neighbors on some regular Euclidean lattice in the xy-plane, :math:`t_\kappa` are the corresponding hopping amplitudes, :math:`\theta_{ij}` are the Peierls phases, and :math:`c^{(\dagger)}` are the particle (creation)annihilation operators.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="Hofstadter.__init__"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">a0</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="s2">&quot;bravais&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">period</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="Hofstadter.__init__"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter.__init__">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">a0</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="s2">&quot;bravais&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">period</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Constructor for the Hofstadter class.</span>
 
 <span class="sd">        Parameters</span>
@@ -308,7 +308,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">theta</span> <span class="o">=</span> <span class="p">(</span><span class="n">theta</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">theta</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>  <span class="c1">#: float : The angle between Bravais lattice vectors (default=pi/3).</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">period</span> <span class="o">=</span> <span class="n">period</span>  <span class="c1">#: int : The factor by which to divide A_UC in the flux density (default=1).</span></div>
 
-<div class="viewcode-block" id="Hofstadter.unit_cell"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter.unit_cell">[docs]</a>    <span class="k">def</span> <span class="nf">unit_cell</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Hofstadter.unit_cell"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter.unit_cell">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">unit_cell</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;The unit cell of the Hofstadter model.</span>
 
 <span class="sd">        Returns</span>
@@ -464,7 +464,7 @@
 
         <span class="k">return</span> <span class="n">num_bands_val</span><span class="p">,</span> <span class="n">avec_val</span><span class="p">,</span> <span class="n">abasisvec_val</span><span class="p">,</span> <span class="n">bMUCvec_val</span><span class="p">,</span> <span class="n">sym_points_val</span></div>
 
-<div class="viewcode-block" id="Hofstadter.hamiltonian"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter.hamiltonian">[docs]</a>    <span class="k">def</span> <span class="nf">hamiltonian</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k_val</span><span class="p">):</span>
+<div class="viewcode-block" id="Hofstadter.hamiltonian"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter.hamiltonian">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">hamiltonian</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k_val</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;The Hamiltonian of the Hofstadter model.</span>
 
 <span class="sd">        Parameters</span>
@@ -516,7 +516,7 @@
 
         <span class="k">return</span> <span class="n">Hamiltonian</span></div>
 
-<div class="viewcode-block" id="Hofstadter.plot_lattice"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter.plot_lattice">[docs]</a>    <span class="k">def</span> <span class="nf">plot_lattice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Hofstadter.plot_lattice"><a class="viewcode-back" href="../../_autosummary/models.hofstadter.Hofstadter.html#models.hofstadter.Hofstadter.plot_lattice">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_lattice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Plot the lattice.&quot;&quot;&quot;</span>
 
         <span class="c1"># extract parameters</span>
@@ -596,7 +596,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Bartholomew Andrews.</p>
+    <p>&#169; Copyright 2026, Bartholomew Andrews.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

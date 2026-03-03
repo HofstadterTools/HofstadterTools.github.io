@@ -252,13 +252,13 @@
 <span></span><span class="sd">&quot;&quot;&quot;Functions for input/output and miscellaneous use.&quot;&quot;&quot;</span>
 
 <span class="c1"># --- external imports</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">csv</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 
 
-<div class="viewcode-block" id="read_t_from_file"><a class="viewcode-back" href="../../_autosummary/functions.utility.read_t_from_file.html#functions.utility.read_t_from_file">[docs]</a><span class="k">def</span> <span class="nf">read_t_from_file</span><span class="p">():</span>
+<div class="viewcode-block" id="read_t_from_file"><a class="viewcode-back" href="../../_autosummary/functions.utility.read_t_from_file.html#functions.utility.read_t_from_file">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">read_t_from_file</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Reads the hopping amplitudes from file.</span>
 
 <span class="sd">    Returns</span>
@@ -282,7 +282,7 @@
     <span class="k">return</span> <span class="n">t_list</span></div>
 
 
-<div class="viewcode-block" id="create_filename"><a class="viewcode-back" href="../../_autosummary/functions.utility.create_filename.html#functions.utility.create_filename">[docs]</a><span class="k">def</span> <span class="nf">create_filename</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">aux_text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="create_filename"><a class="viewcode-back" href="../../_autosummary/functions.utility.create_filename.html#functions.utility.create_filename">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">create_filename</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">aux_text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Create the filename string.</span>
 
 <span class="sd">    Parameters</span>
@@ -354,7 +354,7 @@
     <span class="k">return</span> <span class="n">filename</span></div>
 
 
-<div class="viewcode-block" id="save_data"><a class="viewcode-back" href="../../_autosummary/functions.utility.save_data.html#functions.utility.save_data">[docs]</a><span class="k">def</span> <span class="nf">save_data</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<div class="viewcode-block" id="save_data"><a class="viewcode-back" href="../../_autosummary/functions.utility.save_data.html#functions.utility.save_data">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">save_data</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Save data to file.</span>
 
 <span class="sd">    Parameters</span>
@@ -376,7 +376,7 @@
     <span class="k">return</span> <span class="kc">None</span></div>
 
 
-<div class="viewcode-block" id="load_data"><a class="viewcode-back" href="../../_autosummary/functions.utility.load_data.html#functions.utility.load_data">[docs]</a><span class="k">def</span> <span class="nf">load_data</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">plotting</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="viewcode-block" id="load_data"><a class="viewcode-back" href="../../_autosummary/functions.utility.load_data.html#functions.utility.load_data">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">plotting</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Load data from file.</span>
 
 <span class="sd">    Parameters</span>
@@ -399,20 +399,20 @@
     <span class="k">return</span> <span class="n">model</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">data</span></div>
 
 
-<div class="viewcode-block" id="Logger"><a class="viewcode-back" href="../../_autosummary/functions.utility.Logger.html#functions.utility.Logger">[docs]</a><span class="k">class</span> <span class="nc">Logger</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="Logger"><a class="viewcode-back" href="../../_autosummary/functions.utility.Logger.html#functions.utility.Logger">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">Logger</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Stream stdout and stderr to file.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="Logger.__init__"><a class="viewcode-back" href="../../_autosummary/functions.utility.Logger.html#functions.utility.Logger.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">program</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="Logger.__init__"><a class="viewcode-back" href="../../_autosummary/functions.utility.Logger.html#functions.utility.Logger.__init__">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">program</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">terminal</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="ow">or</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
         <span class="n">directory</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;../../logs/</span><span class="si">{</span><span class="n">program</span><span class="si">}</span><span class="s2">/&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;../../logs/</span><span class="si">{</span><span class="n">program</span><span class="si">}</span><span class="s2">/&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span>
         <span class="n">filename</span> <span class="o">=</span> <span class="n">create_filename</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">log</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">directory</span><span class="o">+</span><span class="n">filename</span><span class="o">+</span><span class="s2">&quot;.log&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">buffering</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></div>
 
-    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">terminal</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">flush</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">flush</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># this flush method is needed for python 3 compatibility.</span>
         <span class="c1"># this handles the flush command by doing nothing.</span>
         <span class="c1"># you might want to specify some extra behavior here.</span>
@@ -426,7 +426,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Bartholomew Andrews.</p>
+    <p>&#169; Copyright 2026, Bartholomew Andrews.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
