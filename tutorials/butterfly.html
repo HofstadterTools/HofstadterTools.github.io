@@ -302,8 +302,8 @@
     <span class="n">model</span> <span class="o">=</span> <span class="n">Hofstadter</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="s2">&quot;square&quot;</span><span class="p">)</span>
 
     <span class="c1"># define flux density</span>
-    <span class="k">if</span> <span class="n">gcd</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># nphi must be a coprime fraction</span>
-        <span class="k">continue</span>
+    <span class="k">if</span> <span class="n">gcd</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># p, q are coprime integers by definition</span>
+        <span class="k">continue</span>  <span class="c1"># all rational nphi are allowed, but we choose to fix q</span>
     <span class="n">nphi</span> <span class="o">=</span> <span class="n">p</span><span class="o">/</span><span class="n">q</span>
 
     <span class="c1"># diagonalize Hamiltonian</span>
