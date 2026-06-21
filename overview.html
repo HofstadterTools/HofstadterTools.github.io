@@ -360,8 +360,8 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:path/to/HofstadterTools$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
 </pre></div>
 </div>
-<p>Alternatively, if you plan on building the documentation locally, the optional <code class="docutils literal notranslate"><span class="pre">docs</span></code> dependencies need to be installed.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:path/to/HofstadterTools$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[docs]&quot;</span>
+<p>Note that if you plan on running the tests, the optional <code class="docutils literal notranslate"><span class="pre">dev</span></code> dependencies need to be installed. Additionally, if you plan on building the documentation locally, the optional <code class="docutils literal notranslate"><span class="pre">docs</span></code> dependencies need to be installed.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:path/to/HofstadterTools$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev,docs]&quot;</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
@@ -382,7 +382,7 @@
 </section>
 <section id="testing">
 <h3>Testing<a class="headerlink" href="#testing" title="Permalink to this heading"></a></h3>
-<p>You can confirm that HofstadterTools is correctly installed by running the pytests.</p>
+<p>You can confirm that HofstadterTools is correctly installed by running the pytests. This assumes that the optional <code class="docutils literal notranslate"><span class="pre">dev</span></code> dependencies are installed.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:any/path$ </span>pytest<span class="w"> </span>--pyargs<span class="w"> </span>HT
 </pre></div>
 </div>
